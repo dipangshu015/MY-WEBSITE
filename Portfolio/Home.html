@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dipangshu Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #0E0146, #06001F);
+            background-size: 300% 300%;
+            animation: gradientSwipe 20s ease-in-out infinite alternate;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 250px;
+            background-color: rgba(32, 32, 32, 0.288);
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            color: #FFD700;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: rgb(0, 255, 85);
+            background: transparent;
+            border: 2px solid rgb(0, 255, 144);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: rgb(255, 255, 255);
+            color: black;
+            border-color: rgb(0, 255, 144);
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgb(0, 255, 144);
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 50px 0;
+            /* Hard mask: centered, 30% width, 0px rounded corners */
+        }
+        .service-box {
+            transition: all 0.6s ease-in-out;
+            color: black;
+            background: linear-gradient(135deg, #FFD700, #FF8C00);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .service-box:hover, .service-box.hovered {
+            background: linear-gradient(135deg, rgba(255, 200, 0, 1), rgba(255, 100, 0, 1));
+            opacity: 1;
+            color: white;
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 15px 25px rgba(255, 140, 0, 0.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #000;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+        }
+        @keyframes gradientSwipe {
+            0% {
+                background-position: top left;
+            }
+            50% {
+                background-position: center;
+            }
+            100% {
+                background-position: bottom right;
+            }
+        }
+            .animated-role {
+            position: relative;
+            display: inline-block;
+        }
+    .animated-role::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, lightgreen, #FFD700);
+        animation: underlineFade 3s ease-in-out infinite;
+    }
+    }
+.underline-in {
+    animation: underlineIn 0.5s forwards;
+    transform-origin: left;
+}
+.underline-out {
+    animation: underlineOut 0.5s forwards;
+    transform-origin: right;
+}
+@keyframes underlineIn {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+@keyframes underlineOut {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
+}
+</style>
+<style>
+    @keyframes underlineFade {
+        0% {
+            width: 0;
+            left: 0;
+        }
+        50% {
+            width: 100%;
+            left: 0;
+        }
+        100% {
+            width: 0;
+            left: 100%;
+        }
+    }
+     @keyframes underlineFade {
+        0% {
+            width: 0;
+            right: 100%;
+        }
+        50% {
+            width: 100%;
+            left: 0;
+        }
+        100% {
+            width: 0;
+            left: 0%
+        }
+    }
+    .image-section {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 200px;
+            padding: 320px 325px 0px;
+            transform: translateY(-10%);
+        }
+        .text-box {
+            min-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 200px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+</style>
+</head>
+<body>
+    <div style="max-width: 1920px; margin: 0 auto; padding: 0;">
+        <header>
+            <h2 style="margin: 0; color: white;">MAGICAL WORLD</h2>
+            <nav style="display: flex; gap: 25px; align-items: center;">
+                <a href="#" style="color: white; text-decoration: none; font-weight: bold;">HOME</a>
+                <a href="http://127.0.0.1:5500/About%20me.html" style="color: white; text-decoration: none; font-weight: bold;">ABOUT ME</a>
+                <a href="#" style="color: white; text-decoration: none; font-weight: bold;">WORK</a>
+                <a href="http://127.0.0.1:5500/Contact%20Me.html" class="btn">CONTACT ME</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Dipangshu Singh</h1>
+            <p id="role">I am a <span style="color: lightgreen;" id="animated-role" class="animated-role active">Motion Artist</span></p>
+            <a href="http://127.0.0.1:5500/About%20me.html" class="btn">Who I Am?</a>
+        </section>
+        
+        </div>
+        <section class="services">
+            <div class="service-box"> <h3>GRAPHICS</h3> <p>Creative & modern designs</p> </div>
+             <div class="service-box"> <h3>UI/UX DESIGN</h3> <p>Designing intuitive and elegant user experiences.</p> </div>
+            <div class="service-box"> <h3 class="animated-text">MOTION GRAPHICS</h3> <p>Dynamic animations bring visuals to life.</p> </div>
+            <div class="service-box"> <h3>WEB DEVELOPER</h3> <p>Crafting sleek, high-performance websites.</p> </div>
+            <div class="service-box"> <h3>VIDEO EDITOR</h3> <p>Transforming raw footage into stunning visuals.</p> </div>
+        </section>
+
+
+         <section class="image-section">
+            <img src="D:\Portfolio\files\picture\o.jpg" alt="Dipangshu Singh" style="width:500px;height:600px;">
+            <div class="text-box">
+                <h3>What I Use</h3>
+                <p>Hello! I'm Dipangshu Singh, a creative professional with expertise in graphic design, motion graphics, and web development. I bring ideas to life with precision, creativity, and innovation.</p>
+            <style>
+                .text-box h3 {
+                    font-size: 30px;
+                    color: #ffffff;
+                    text-align: right;
+                    position: relative;
+                    top: -200px;
+                    right:  340px;
+
+                }
+                .text-box p {
+                    font-size: 20px;
+                    color: #fff;
+                    text-align: left;
+                    line-height: 25px;
+                    position: relative;
+                    top: -200px;
+                    right: -10px;
+                }
+            </style>
+            </div>
+        </section>
+         <footer>
+            <div class="container">
+                <p>&copy; 2025 Dipangshu Singh. All rights reserved.</p>
+                <p>Follow me on 
+                    <a href="https://www.instagram.com/dipangshu_singh/" target="_blank" style="color: #1e90ff;">Instagram</a>, 
+                    <a href="https://www.linkedin.com/in/dipangshu-singh-4b0b2b1b6/" target="_blank" style="color: #1e90ff;">LinkedIn</a>, 
+                    <a href="https://github.com/dipangshu-singh" target="_blank" style="color: #1e90ff;">GitHub</a>
+                </p>
+            </div>      
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let serviceBoxes = document.querySelectorAll(".service-box");
+                let currentIndex = 0;
+                function cycleServices() {
+                    serviceBoxes.forEach((box, index) => box.classList.remove("hovered"));
+                    serviceBoxes[currentIndex].classList.add("hovered");
+                    currentIndex++;
+                    if (currentIndex >= serviceBoxes.length) {
+                        setTimeout(() => {
+                            serviceBoxes.forEach((box) => box.classList.remove("hovered"));
+                            currentIndex = 0;
+                            setTimeout(cycleServices, 3000);
+                        }, 3000);
+                    } else {
+                        setTimeout(cycleServices, 3000);
+                    }
+                }
+                cycleServices();
+
+                // NEW: Role animation loop
+                const roles = ["Graphics Designer", "UI/UX Designer", "Motion Graphics", "Web Developer", "Video Editor"];
+                let roleIndex = 0;
+                const animatedRole = document.getElementById("animated-role");
+
+                function cycleRoles() {
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    animatedRole.classList.remove('active');
+                    void animatedRole.offsetWidth;
+                    animatedRole.textContent = roles[roleIndex];
+                    animatedRole.classList.add('active');
+                    setTimeout(cycleRoles, 3000);
+                }
+                setTimeout(cycleRoles, 3000);
+            });
+        </script>
+
+       
+    </div>
+</body>
+</html>

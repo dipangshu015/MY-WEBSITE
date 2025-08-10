@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glassmorphism Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: #8e0e00; /* fallback */
+      background: linear-gradient(to right, #8e0e00, #1f1c18);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .left-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      color: white;
+      background: #8e0e00;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      line-height: 1.4;
+    }
+
+    .left-section h1 span {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .left-section p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1614851099511-d056a736c0b0?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    .login-card h2 {
+      margin-bottom: 24px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    .login-card input::placeholder {
+      color: #eee;
+    }
+
+    .login-card .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      font-size: 0.85rem;
+    }
+
+    .login-card .actions a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    .login-card button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #e50914;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .login-card button:hover {
+      background-color: #ff1e26;
+    }
+
+    .login-card .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .login-card .footer a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section {
+        text-align: center;
+      }
+
+      .right-section {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div>
+        <h1>Whatever happens here, <span>stays</span> here</h1>
+        <p>Please fill the form on the right side.</p>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <form class="login-card">
+        <h2>Login</h2>
+        <input type="text" placeholder="Full Name" required />
+        <input type="password" placeholder="Password" required />
+        <div class="actions">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit">Let's Go →</button>
+        <div class="footer">
+          Don't have an account? <a href="#">Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

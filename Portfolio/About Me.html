@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .profile-pic {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+        }
+
+        .about-content {
+            flex: 2 1 300px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tags img {
+            width: 60px;
+            height: auto;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 8px;
+        }
+
+        .contact {
+            margin-top: 40px;
+        }
+
+        .contact h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            margin: 4px 0;
+        }
+
+        a {
+            color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+            <h2 style="margin: 0; color: white;">MAGICAL WORLD</h2>
+            <nav style="display: flex; gap: 25px; align-items: center;">
+                <a href="#" style="color: white; text-decoration: none; font-weight: bold;">HOME</a>
+                <a href="http://127.0.0.1:5500/About%20me.html" style="color: white; text-decoration: none; font-weight: bold;">ABOUT ME</a>
+                <a href="#" style="color: white; text-decoration: none; font-weight: bold;">WORK</a>
+                <a href="#" class="btn">CONTACT ME</a>
+            </nav>
+        </header>
+    <div class="container">
+        <div class="about-section">
+            <div class="profile-pic">
+                <img src="D:\Portfolio\files\picture\o.jpg" alt="Dipangshu Singh">
+            </div>
+            <div class="about-content">
+                <h1>Hello, I'm Dipan</h1>
+                <p>
+                    I’m a passionate designer and front-end developer based in India. I love turning ideas into beautiful, functional digital experiences. Currently studying Multimedia, Animation & Graphic Design, I enjoy creating everything from websites to motion graphics.
+                </p>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-tags">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/11/Adobe-Photoshop-Logo.png" alt="Photoshop Logo">
+                        <!-- Add more skill icons below like this -->
+                        <!-- <img src="URL_TO_YOUR_IMAGE" alt="Skill Name"> -->
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: dipan@example.com</p>
+                    <p>Phone: +91-98765-43210</p>
+                    <p>Portfolio: <a href="https://www.figma.com/proto/rUrbBJGVoDLnsmEdOauv5h/dip" target="_blank">My Portfolio</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
